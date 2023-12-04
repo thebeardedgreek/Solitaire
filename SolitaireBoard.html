@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Stack</title>
+    <link rel="stylesheet" href="BoardStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="BoardBehavior.jss"></script>
+</head>
+  <body>
+
+    <div class="game-options">
+
+       <div id="new-game" onclick="startNewGame()">
+	 <p> New game! </p>
+       </div>
+
+    </div>
+
+
+    <div class="game-container">
+
+      <div class="left-column">
+
+        <div id="reserve-deck" class="reserve-deck" onclick="moveCard()">
+          <!-- Reserve deck area -->
+        </div>
+        <div id="discard-deck" class="reserve-deck">
+          <!-- Discard deck area -->
+        </div>
+
+      </div>
+
+      <div class="right-column">
+
+        <div id="foundation-piles" class="foundation-piles">
+
+          <div id="foundation-pile-1" class="foundation-pile">
+            <!-- Foundation pile 1 area -->
+          </div>
+
+          <div id="foundation-pile-2" class="foundation-pile">
+            <!-- Foundation pile 2 area -->
+          </div>
+
+          <div id="foundation-pile-3" class="foundation-pile">
+            <!-- Foundation pile 3 area -->
+          </div>
+
+          <div id="foundation-pile-4" class="foundation-pile">
+            <!-- Foundation pile 4 area -->
+          </div>
+
+        </div>
+
+        <div id="stacks" class="stacks">
+
+          <div id="stack-1" class="stack">
+            <!-- Stack 1 area -->
+          </div>
+
+          <div id="stack-2" class="stack">
+            <!-- Stack 2 area -->
+          </div>
+
+          <div id="stack-3" class="stack">
+            <!-- Stack 3 area -->
+          </div>
+
+          <div id="stack-4" class="stack">
+            <!-- Stack 4 area -->
+          </div>
+
+          <div id="stack-5" class="stack">
+            <!-- Stack 5 area -->
+          </div>
+
+          <div id="stack-6" class="stack">
+            <!-- Stack 6 area -->
+          </div>
+
+          <div id="stack-7" class="stack">
+            <!-- Stack 7 area -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

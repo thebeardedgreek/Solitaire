@@ -1,0 +1,214 @@
+/* Style for card slots */
+.card-slot {
+  width: 160px; /* Set the width to 160px */
+  height: 240px; /* Set the height to 240px */
+  text-align: center;
+  line-height: 240px; /* Adjust as needed */
+  margin: 10px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+/* Style for the card content (optional) */
+.card {
+  width: 160px; /* Adjust the width to match the slot width */
+  height: 240px; /* Adjust the height to match the slot height */
+  background-color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-size: 36px;
+  color: black; /* Set a default color */
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s;
+}
+
+.red-suit {
+  color: red;
+}
+
+.face-down {
+  background-image: url('https://opengameart.org/sites/default/files/card%20back%20red.png'); /* Replace with your smiley face image */
+  background-size: cover;
+  color: transparent; /* Hide the text */
+}
+
+
+.corner {
+  position: absolute;
+  font-size: 12px;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+
+#new-game {
+  width: 80px; /* Set the width to 160px */
+  height: 20px; /* Set the height to 240px */
+  text-align: center;
+  line-height: 240px; /* Adjust as needed */
+  margin: 10px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006400;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+/* Style the reserve and discard decks */
+.reserve-deck {
+  user-select: none;
+  width: 160px; /* Set the width to 160px */
+  height: 240px; /* Set the height to 240px */
+  border: 2px solid #222;
+  text-align: center;
+  line-height: 240px; /* Use 240px line-height for reserve-deck */
+  font-size: 36px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Style stacks of cards */
+.stacks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  position: relative; /* Make the stack container a positioning context */
+}
+
+.stack {
+  width: 160px;
+  height: 240px; /* Change to 'auto' to allow varying heights */
+  border: 2px solid #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  //position: absolute; /* Make the stack a positioned element */
+}
+
+.card:nth-child(n + 2) {
+  margin-top: -45px; /* Adjust the margin for subsequent cards */
+  z-index: 0; /* Lower z-index for subsequent cards */
+}
+
+.card:hover {
+  transform: translateY(-20px); /* Add hover effect */
+}
+
+
+/* Apply a background color to the whole page */
+body {
+  background-color: #006400;
+  margin: 5%; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+/* Center the game container within the page */
+.game-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 50px 20px 20px;
+  width: 100%;
+  max-width: 1500px; /* Adjust as needed */
+//  max-height: 1500px; /* Adjust as needed */
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5); /* Set the game container background color */
+}
+
+.game-options {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 50px 20px 20px;
+  width: 100%;
+  max-width: 1500px; /* Adjust as needed */
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5); /* Set the game container background color */
+}
+
+/* Create a left column for reserve and discard decks */
+.left-column {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the reserve and discard decks */
+.reserve-deck {
+  user-select: none;
+  width: 120px;
+  height: 160px;
+  border: 2px solid #222;
+  text-align: center;
+  line-height: 160px;
+  font-size: 36px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Create a right column for foundation piles and stacks */
+.right-column {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style foundation piles */
+.foundation-piles {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.foundation-pile {
+  width: 120px;
+  height: 160px;
+  border: 2px solid #222;
+  text-align: center;
+  line-height: 140px;
+  font-size: 36px;
+}
+
+/* Style stacks of cards */
+.stacks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.stack {
+  width: 120px; /* Adjust the width as needed */
+  height: 160px; /* Adjust the height as needed */
+  border: 2px solid #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+
